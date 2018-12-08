@@ -15,7 +15,9 @@ class ItemController extends Controller
      */
     public function index()
     {
-        return response()->json(Order::select(['username', 'email as address'])->first());
+        $user = Order::select(['username', 'email'])->first();
+        return view('test', compact('user'));
+        //return response()->json(Order::select(['username', 'email as address'])->first());
 
     }
 
