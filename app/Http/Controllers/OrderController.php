@@ -24,7 +24,7 @@ class OrderController extends Controller
      */
     public function store(Request $request)
     {
-        //Some code...
+        //Something else...
     }
 
     /**
