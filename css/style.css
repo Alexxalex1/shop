@@ -1,9 +1,8 @@
-body{
-  background:
-}
+
 .carUsel {
     width: 100%;
     max-width: 100%;
+    margin-top: 30%;
 }
 
 .rightSec {
@@ -39,9 +38,12 @@ body{
     color: red;
     font-family: Roboto;
     letter-spacing: 0.2em;
+    font-size: 20px;
 }
 
-strong {}
+strong {
+  font-size: 18px;
+}
 
 .Button1:hover {
     cursor: pointer;
@@ -85,19 +87,66 @@ strong {}
 .mainContent{
   margin-top: 96px;
 }
-.rectangles1, .rectangles2, .rectangles3, .rectangles4{
+.rectangles1 {
   width: 560px;
   height: 313px;
-  background: #c4c4c4;
+  background: url('addons/Rectangle 9.jpg');
   max-width: 560px;
   
+}
+.rectangles2{
+ width: 560px;
+  height: 313px;
+  background: url('addons/Rectangle 9.4.png');
+  max-width: 560px;
+}
+.rectangles3{
+ width: 560px;
+  height: 313px;
+  background: url('addons/Rectangle 9.2.png');
+  max-width: 560px;
+}
+.rectangles4{
+   width: 560px;
+  height: 313px;
+  background: url('addons/Rectangle 9.3.png');
+  max-width: 560px;
 }
 .rectangles3, .rectangles4{
   margin-top: 20px;
 }
+.ButtonInRectangles{
+display: flex;
+justify-content: center;
+align-items: center;
+font-family: Roboto;
+font-style: normal;
+font-size: 30px;
+letter-spacing: 0.02em;
+color: #FFFFFF;
+}
+.Wall{
+width: 195px;
+height: 49px;
+background: rgba(0, 0, 0, 0.5);
+margin-left: 20px;
+
+
+}
+
+
+
+
+
+
 footer{
     margin-top: 50px;
 }
 .carusel{
     margin-top: 10px;
 }
+
+
+
+
+
