@@ -14,6 +14,10 @@
     <link href="css/mdb.min.css" rel="stylesheet">
     <!-- Your custom styles (optional) -->
     <link href="css/style.css" rel="stylesheet">
+
+    <link href="{{ asset('css/style.css') }}
+
+
 </head>
 
 <body>
