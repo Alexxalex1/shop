@@ -12,6 +12,8 @@
 
 @yield('base')
 
+@include('layouts.my')
+
 @include('layouts.footer')
 </body>
 </html>
