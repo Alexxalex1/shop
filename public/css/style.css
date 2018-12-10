@@ -1,0 +1,152 @@
+
+.carUsel {
+    width: 100%;
+    max-width: 100%;
+    margin-top: 30%;
+}
+
+.rightSec {
+    margin-left: 600px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    font-size: 20px;
+}
+
+.leftSec {
+    font-family: Roboto;
+    font-style: normal;
+    margin-left: -10px;
+    font-weight: 300;
+    line-height: normal;
+    font-size: 20px;
+    column-gap: 31px;
+}
+
+
+
+.Button1 {
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 35%;
+    margin-top: 50px;
+    width: 340px;
+    height: 60px;
+    color: red;
+    font-family: Roboto;
+    letter-spacing: 0.2em;
+    font-size: 20px;
+}
+
+strong {
+  font-size: 18px;
+}
+
+.Button1:hover {
+    cursor: pointer;
+    font-size: 25px;
+    color: orange;
+}
+
+.points {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*  Producrs*/
+
+.products{
+  margin-top: 85px;
+}
+.col-3{
+  outline: 1px solid #ff4900;
+}
+
+.product-img{
+  height: 230px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.product-ttl, .price, .presence{
+  font-weight: normal;
+  font-family: Roboto;
+  font-size: 16px;
+  letter-spacing: 0.02em;
+}
+.presence{
+  color: #04cf00;
+}
+
+/*  MAIN CONTENT */
+
+.mainContent{
+  margin-top: 96px;
+}
+.rectangles1 {
+  width: 560px;
+  height: 313px;
+  background: url('addons/Rectangle 9.jpg');
+  max-width: 560px;
+  
+}
+.rectangles2{
+ width: 560px;
+  height: 313px;
+  background: url('addons/Rectangle 9.4.png');
+  max-width: 560px;
+}
+.rectangles3{
+ width: 560px;
+  height: 313px;
+  background: url('addons/Rectangle 9.2.png');
+  max-width: 560px;
+}
+.rectangles4{
+   width: 560px;
+  height: 313px;
+  background: url('addons/Rectangle 9.3.png');
+  max-width: 560px;
+}
+.rectangles3, .rectangles4{
+  margin-top: 20px;
+}
+.ButtonInRectangles{
+display: flex;
+justify-content: center;
+align-items: center;
+font-family: Roboto;
+font-style: normal;
+font-size: 30px;
+letter-spacing: 0.02em;
+color: #FFFFFF;
+}
+.Wall{
+width: 195px;
+height: 49px;
+background: rgba(0, 0, 0, 0.5);
+margin-left: 20px;
+
+
+}
+
+
+
+
+
+
+footer{
+    margin-top: 50px;
+}
+.carusel{
+    margin-top: 10px;
+}
+
+
+
+
+
