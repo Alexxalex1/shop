@@ -69,7 +69,7 @@
 
 
                     <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-4"><div class="product-img">
-                            <img src="{{asset('img/'.$item->image)}}" width="100px" height="100px">
+                            <img src="{{asset('img/'.$item->image)}}" width="100%" height="100%">
                         </div>
 
                         <div class="product-ttl">{{ $item->name}} </div>
@@ -81,53 +81,9 @@
                         </div>
                         <div class="presence">
                             В наличии
-
-
                         </div>
-
                     </div>
                     @endforeach
-                    <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-4"><div class="product-img">
-                            <img src="img/Rectangle 6.6.png">
-                        </div>
-                        <div class="product-ttl">Milka Oreo 300 гр</div>
-                        <br>
-                        <br>
-                        <div class="price">
-                            430 рублей
-                            <a href=""><img src="img/Корзина.png"></a>
-                        </div>
-                        <div class="presence">
-                            В наличии
-                        </div>
-                    </div>
-                    <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-4"><div class="product-img">
-                            <img src="img/Rectangle 6.4.png">
-                        </div>
-                        <div class="product-ttl">Kinder Mix 237 гр</div>
-                        <br>
-                        <br>
-                        <div class="price">
-                            1 099 рублей
-                            <a href=""><img src="img/Корзина.png"></a>
-                        </div>
-                        <div class="presence">
-                            В наличии
-                        </div>
-                    </div>
-                    <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-4"><div class="product-img">
-                            <img src="img/Rectangle 6.7.png">
-                        </div>
-                        <div class="product-ttl">Елочная игрушка Санта с Елочкой 5*4*10 см, подвеска </div>
-                        <br>
-                        <div class="price">
-                            1 099 рублей
-                            <a href=""><img src="img/Корзина.png"></a>
-                        </div>
-                        <div class="presence">
-                            В наличии
-                        </div>
-                    </div>
                 </div>
             </div>
 
