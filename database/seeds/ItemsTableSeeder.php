@@ -9,20 +9,27 @@ class ItemsTableSeeder extends Seeder
      *
      * @return void
      */
+
+/*$item = \App\Models\Item::create([
+'name' =>  '',
+'about' => '',
+'price' => ,
+'image' => ''
+]);*/
     public function run()
     {
         $item1 = \App\Models\Item::create([
-            'name' =>  str_random(),
-            'about' => str_random(200),
-            'price' => 10.1,
-            'image'=> str_random().'.jpg'
+            'name' =>  'Новогодний леденец-трость Tutti Frutti ',
+            'about' => 'Рождественский леденец-трость со вкусом Тутти Фрутти - сладкое украшение новогодней елочки и праздничного стола',
+            'price' => 1199,
+            'image' => '1.jpg'
         ]);
 
         $item2 = \App\Models\Item::create([
-            'name' =>  str_random(),
-            'about' => str_random(200),
-            'price' => 10.1,
-            'image'=> str_random().'.jpg'
+            'name' =>  'Набор конфет Nestle Quality Street',
+            'about' => 'Популярный в Британии набор конфет с тоффи, молочным и темным шоколадом',
+            'price' => 990,
+            'image' => 'Nestle Quality Street .jpeg'
         ]);
 
         $item3 = \App\Models\Item::create([

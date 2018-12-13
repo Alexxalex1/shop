@@ -2,18 +2,18 @@
 
     <div class="container">
 
-        <a href="index.html" class="navbar-brand  waves-effect">
+        <a href="/" class="navbar-brand  waves-effect">
             <img src="img/Logo.png" width="60" height="56" alt="">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-{{--<link href="{{ asset('css/style.css') }}--}}
+
         <div class="collapse navbar-collapse" id="navbarContent">
             <div class="col-xl-11">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a href="products.html" class="nav-link waves-effect"><strong>Сладости</strong> </a>
+                        <a href="/sweets" class="nav-link waves-effect"><strong>Сладости</strong> </a>
                     </li>
                     <li class="nav-item">
                         <a href="#" class="nav-link waves-effect">

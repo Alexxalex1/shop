@@ -38,7 +38,8 @@ class FeedbackController extends Controller
         $name = $request->name;
         $feedback = $request->message;
 
-        Feedback::create($request->all()); /*
+        Feedback::create($request->all());
+ /*
  {
     name: 'Danil',
     message: 'Nice tovar~'
