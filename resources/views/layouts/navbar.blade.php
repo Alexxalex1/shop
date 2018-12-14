@@ -24,7 +24,7 @@
                             <strong>Наборы</strong></a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link waves-effect ">
+                        <a href="/feedback" class="nav-link waves-effect ">
                             <strong> Отзывы</strong></a>
                     </li>
                 </ul>

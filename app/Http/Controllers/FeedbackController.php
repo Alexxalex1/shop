@@ -14,7 +14,8 @@ class FeedbackController extends Controller
      */
     public function index()
     {
-        return response()->json(Item::select(['feedback'])->get());
+        return view ('feedback');
+        //return response()->json(Item::select(['feedback'])->get());
     }
 
     /**

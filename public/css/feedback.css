@@ -1,0 +1,33 @@
+.feedback1{
+	margin-top: 115px;
+	font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+line-height: normal;
+font-size: 30px;
+color: #000000;
+margin-left: 10px;
+
+}
+.ButtonFeedback2{
+	background: #4CE893;
+	color: #fff;
+	width: 228px;
+height: 43px;
+margin-top: 60px;
+display: flex;
+align-items: center;
+justify-content: center;
+margin-left: 50px;
+}
+.Feedback3{
+	width: 711px;
+	height: 439px;
+	margin-top: 47px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding-top: 130px;
+	background: #EAEAEA;
+}
+

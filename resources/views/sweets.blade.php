@@ -14,7 +14,7 @@
     <link href="{{asset('css/mdb.min.css')}}" rel="stylesheet">
     <!-- Your custom styles (optional) -->
     <script src="https://yastatic.net/jquery/1.6.4/jquery.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="products.css">
+    <link rel="stylesheet" type="text/css" href={{asset('css/products.css')}}">
 
 
 </head>
@@ -69,7 +69,7 @@
 
 
                     <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-4"><div class="product-img">
-                            <img src="{{asset('img/'.$item->image)}}" width="100%" height="100%">
+                            <img src="{{asset('img/'.$item->image)}}" width="80%" height="80%">
                         </div>
 
                         <div class="product-ttl">{{ $item->name}} </div>
