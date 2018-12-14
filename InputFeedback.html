@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Basket</title>
+    <title>UGS</title>
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Bootstrap core CSS -->
@@ -12,11 +13,14 @@
     <!-- Material Design Bootstrap -->
     <link href="css/mdb.min.css" rel="stylesheet">
     <!-- Your custom styles (optional) -->
-    <link rel="stylesheet" type="text/css" href="basket3.css">
+    <link href="css/style.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="InputFeedback.css">
 
 </head>
 <body>
-    <nav class="navbar fixed-top navbar-expand-lg navbar-light white scrolling-navbar">
+
+
+     <nav class="navbar fixed-top navbar-expand-lg navbar-light white scrolling-navbar">
 
         <div class="container">
 
@@ -61,38 +65,6 @@
         </div>
     </nav>
 
-<div class="container"> 
-    <div class="basket">
-       <h1> <strong>Корзина</strong></h1>  
-    </div>
-
-
-
-
-    <div class="row">
-        <div class="col-xl-4">
-         <div class="Buttonn1">
-        Редактирование заказа 
-         </div>   
-        </div>
-        <div class="col-xl-4">
-        <div class="Buttonn2">
-          Выбор способа доставки  
-        </div>
-        </div>
-        <div class="col-xl-4">
-         <div class="Buttonn3">
-          Завершение оформления   
-         </div>   
-        </div>
-    </div>
-
-
-
-    
-
-
-    </div>
 
 
 
@@ -102,6 +74,19 @@
 
 
 
+<div class="container">
+
+
+<form action="" method="post">
+
+    <input type="text" placeholder="Имя" name="fname" />
+    <input type="email" placeholder="E-mail" name="email" />
+    <textarea placeholder="Сообщение" name="message" rows="10" cols="45"></textarea>
+    <input type="submit" value="Отправить" >
+</form>
+
+
+</div>
 
 
 
@@ -111,22 +96,13 @@
 
 
 
-    <footer class="page-footer font-small yellow">
-
-  <!-- Copyright -->
-  <div class="footer-copyright text-center py-3"> Sincerely, NYG team!
-    <a href="https://mdbootstrap.com/education/bootstrap/"> </a>
-  </div>
-  <!-- Copyright -->
-
-
-<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+       <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
     <!-- Bootstrap tooltips -->
     <script type="text/javascript" src="js/popper.min.js"></script>
     <!-- Bootstrap core JavaScript -->
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <!-- MDB core JavaScript -->
     <script type="text/javascript" src="js/mdb.min.js"></script>
-</footer>
 </body>
+
 </html>
