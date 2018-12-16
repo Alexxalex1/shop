@@ -68,21 +68,23 @@
    {{-- $request->session()->push('basket.values', $request->id);--}}
     {{-- $items, $currentItem --}}
 
+    {{--@foreach ($items as $item)--}}
+    {{--@foreach($items as $item)--}}
 
-    @foreach ($items as $item)
+
+    @foreach (session()->get('basket.values') as $item)
 
     <div class="row">
         <div class="col-xl-6">
             <div class="Description">
-                {{$item->name}}
-            </div>
+                {{ $item }}
             <div class="Product">
-                <img src="{{asset('img/'.$item->image)}}" width="123px">
+                <img src="{{asset('img/'.$item)}}" width="123px">
             </div>
         </div>
         <div class="col-xl-2">
             <div class="price">
-                {{$item->price }} ₽
+                {{$item}} ₽
             </div>
         </div>
         <div class="col-xl-2">
@@ -92,7 +94,7 @@
         </div>
         <div class="col-xl-2">
             <div class="price">
-                {{$item->price*2 }} ₽
+                {{$item }} ₽
             </div>
         </div>
     </div>

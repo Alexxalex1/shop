@@ -14,6 +14,10 @@ Route::get('test', function () {
     dd(session()->get('basket.values'));
 });
 
+Route::get('lol', function () {
+    dd(session()->get('basket.values'));
+});
+
 Route::get('clean', function (){
 
   (session()->forget('basket.values'));

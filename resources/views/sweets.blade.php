@@ -67,7 +67,7 @@
                         <br>
                         <div class="price">
                             {{ $item->price }} рублей
-                            <a href="{{ route('basket.add', ['id' => $item->id]) }}"><img src="img/Корзина.png"></a>
+                            <a href="{{ route('basket.add', ['id' => $item->id] )}}"><img src="img/Корзина.png"></a>
                         </div>
                         <div class="presence">
                             В наличии

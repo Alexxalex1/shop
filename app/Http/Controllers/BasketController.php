@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Item;
 use Illuminate\Http\Request;
+use phpDocumentor\Reflection\Types\Compound;
 
 class BasketController extends Controller
 {
@@ -16,7 +17,8 @@ class BasketController extends Controller
     {
 
        $items = Item::orderBy('id', 'desc')->get();
-       return view('basket' ,compact('items'));
+       return view('basket', compact('items'));
+
 
                 //return response()->json(Item::select(['name', 'about', 'price', 'image'])->get());
     }
@@ -39,16 +41,22 @@ class BasketController extends Controller
      */
     public function store(Request $request)
     {
-        //if (! in_array($request->id, $request->session()->get('basket.values')))
-        $items = [];
+    //if (! in_array($request->id, $request->session()->get('basket.values')))
+//    $items = [];
         $request->session()->push('basket.values', $request->id);
-        foreach ($request->session()->get('basket.values') as $item) {
-            $currentItem = Item::find($item);
-            array_push($items, $currentItem);
-        }
+
+        $itemsCollection = [];
+        foreach (session()->get('basket.values') as $item)
+            array_push($itemsCollection, Item::find($item));
 
 
         return redirect()->back();
+
+
+        /*   foreach ($request->session()->get('basket.values') as $item) {
+        $currentItem = Item::find($item);
+
+        array_push($items, $currentItem);}*/
 
         //$request->session()->push('basket.values', $request->id);
         //$request->session()->forget('basket.values'); забыть ссесию
