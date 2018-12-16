@@ -16,57 +16,13 @@
 
 </head>
 <body>
-<nav class="navbar fixed-top navbar-expand-lg navbar-light white scrolling-navbar">
 
-    <div class="container">
+@include('layouts.navbar')
 
-        <a href="index.html" class="navbar-brand  waves-effect">
-            <img src="img/Logo.png" width="60" height="56" alt="">
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarContent">
-            <div class="col-xl-11">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a href="products.html" class="nav-link waves-effect"><strong>Сладости</strong> </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link waves-effect">
-                            <strong>Украшения</strong></a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link waves-effect">
-                            <strong>Наборы</strong></a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link waves-effect ">
-                            <strong> Отзывы</strong></a>
-                    </li>
-                </ul>
-            </div>
-            <div class="col-xl-1">
-                <ul class="navbar-nav">
-
-                    <li class="nav-item">
-                        <a href="basket1.html" class="nav-link waves-effect"> <img src="img/Корзина.png"></a>
-                    </li>
-                </ul>
-
-            </div>
-
-        </div>
-    </div>
-</nav>
 <div class="container">
     <div class="basket">
         <h1> <strong>Корзина</strong></h1>
     </div>
-
-
-
 
     <div class="row">
         <div class="col-xl-4">
@@ -85,8 +41,6 @@
             </div>
         </div>
     </div>
-
-
 
     <div class="row">
         <div class="col-xl-6">
@@ -111,21 +65,24 @@
         </div>
     </div>
 
+   {{-- $request->session()->push('basket.values', $request->id);--}}
+    {{-- $items, $currentItem --}}
+
+
+    @foreach ($items as $item)
 
     <div class="row">
         <div class="col-xl-6">
             <div class="Description">
-                Milka Oreo 300 гр
+                {{$item->name}}
             </div>
             <div class="Product">
-                <img src="img/Rectangle 6.6.png" width="123px">
-
+                <img src="{{asset('img/'.$item->image)}}" width="123px">
             </div>
-
         </div>
         <div class="col-xl-2">
             <div class="price">
-                430 ₽
+                {{$item->price }} ₽
             </div>
         </div>
         <div class="col-xl-2">
@@ -135,77 +92,12 @@
         </div>
         <div class="col-xl-2">
             <div class="price">
-                860 ₽
+                {{$item->price*2 }} ₽
             </div>
         </div>
-
-
     </div>
     <hr>
-
-    <div class="row">
-        <div class="col-xl-6">
-            <div class="Description">
-                KitKat Mocha 165 гр
-            </div>
-            <div class="Product">
-                <img src="img/Rectangle 6.2.png" width="123px">
-
-            </div>
-
-        </div>
-
-        <div class="col-xl-2">
-            <div class="price">
-                269 ₽
-            </div>
-        </div>
-        <div class="col-xl-2">
-            <div class="price">
-                1
-            </div>
-        </div>
-        <div class="col-xl-2">
-            <div class="price">
-                269 ₽
-            </div>
-        </div>
-
-
-    </div>
-    <hr>
-
-    <div class="row">
-        <div class="col-xl-6">
-
-            <div class="Description">
-                Елочная игрушка Санта с Елочкой 5*4*10 см, подвеска
-            </div>
-            <div class="Product">
-                <img src="img/Rectangle 6.7.png" width="123px">
-
-            </div>
-
-        </div>
-        <div class="col-xl-2">
-            <div class="price">
-                269 ₽
-            </div>
-        </div>
-        <div class="col-xl-2">
-            <div class="price">
-                20
-            </div>
-        </div>
-        <div class="col-xl-2">
-            <div class="price">
-                5920 ₽
-            </div>
-        </div>
-
-
-    </div>
-    <hr>
+    @endforeach
 
     <div class="row">
         <div class="col-xl-8">

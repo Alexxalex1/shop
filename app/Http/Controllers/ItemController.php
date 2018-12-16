@@ -15,9 +15,9 @@ class ItemController extends Controller
      */
     public function index()
     {
-        $user = Order::select(['username', 'email'])->first();
+        //$user = Order::select(['username', 'email'])->first();
         return view('test', compact('user'));
-        session()->push('basket.items', $item->id);
+
 
      /*   $my = Order::select(['phone'])->first();
         return view('test', compact('my'));*/

@@ -33,7 +33,7 @@
                 <ul class="navbar-nav">
 
                     <li class="nav-item">
-                        <a href="basket1.html" class="nav-link waves-effect"> <img src="img/Корзина.png"></a>
+                        <a href="/basket" class="nav-link waves-effect"> <img src="img/Корзина.png"></a>
                     </li>
                 </ul>
 

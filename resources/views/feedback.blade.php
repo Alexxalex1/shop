@@ -47,10 +47,9 @@
     </div>
     <div class="row">
         <div class="col-2 col-sm-3 col-md-4 col-lg-5 col-xl-2"></div>
-        <div class="col-8 col-sm-6 col-md-4 col-lg-2
-		col-xl-8">
+        <div class="col-8 col-sm-6 col-md-4 col-lg-2col-xl-8">
             <div class="Feedback3">
-                <textarea name="comment" cols="80" rows="11"></textarea>
+                <textarea name="comment" cols="80" rows="11">Отзыв</textarea>
             </div>
         </div>
         <div class="col-2 col-sm-3 col-md-4 col-lg-5 col-xl-2"></div>

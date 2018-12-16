@@ -56,31 +56,18 @@
         </div>
         <div class="col-xl-10">
             <!-- Products-->
-
-                {{--
-            <h2>Товар: {{ $item->name }}</h2>
-            <h2>Цена: {{ $item->price }}</h2>
-            --}}
-
-
             <div class="products">
                 <div class="row">
                     @foreach ($items as $item)
-
-
                     <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-4"><div class="product-img">
-                            <img src="{{asset('img/'.$item->image)}}" width="100%" height="100%">
+                            <img src="{{ asset('img/'.$item->image) }}" width="100%" height="100%">
                         </div>
-
                         <div class="product-ttl">{{ $item->name}} </div>
                         <br>
                         <br>
                         <div class="price">
                             {{ $item->price }} рублей
-
-
-                            <button type="submit" name="{{ $item->id }}" ><img src="img/Корзина.png"></button>
-
+                            <a href="{{ route('basket.add', ['id' => $item->id]) }}"><img src="img/Корзина.png"></a>
                         </div>
                         <div class="presence">
                             В наличии
@@ -92,7 +79,6 @@
 
         </div>
     </div>
-
 </div>
 
 <!-- Footer-->
