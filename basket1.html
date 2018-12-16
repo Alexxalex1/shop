@@ -129,9 +129,9 @@
               </div>
             </div>
             <div class="col-xl-2">
-                <div class="price">
-                2
-                </div>
+    <div class="counter-elem__arrow counter-elem__plus">+</div>
+<input type="text" class="counter-elem__input splash-input" value="1">
+<div class="counter-elem__arrow counter-elem__minus">-</div>
             </div>
             <div class="col-xl-2">
                 <div class="price">
@@ -141,8 +141,37 @@
 
 
     </div>
-<hr>
 
+<style>
+    div{
+        cursor: pointer;
+    }
+    .counter-elem__arrow{
+        margin-left: 50%;
+        font-size: 35px;
+        margin-top: 10px;
+    }
+    input{
+        width: 10%;
+        margin-left: 50%;
+        margin-top: 10px;
+    }
+
+</style>
+
+<script>
+    var splashInput = document.querySelector(".splash-input");
+var splashVal = parseFloat(splashInput.value);
+document.querySelector(".counter-elem__plus").onclick = function() {
+  splashInput.value = ++splashVal;
+}
+document.querySelector(".counter-elem__minus").onclick = function() {
+  if (splashVal > 1) {
+    splashInput.value = --splashVal;
+  } 
+} 
+</script>
+<hr>
  <div class="row">
         <div class="col-xl-6">
              <div class="Description">
@@ -161,9 +190,9 @@
               </div>
             </div>
             <div class="col-xl-2">
-                <div class="price">
-                1
-                </div>
+                <div class="counter-elem__arrow counter-elem__plus">+</div>
+<input type="text" class="counter-elem__input splash-input" value="1">
+<div class="counter-elem__arrow counter-elem__minus">-</div>
             </div>
             <div class="col-xl-2">
                 <div class="price">
@@ -193,9 +222,9 @@
               </div>
             </div>
             <div class="col-xl-2">
-                <div class="price">
-                20
-                </div>
+                <div class="counter-elem__arrow counter-elem__plus">+</div>
+<input type="text"  class="counter-elem__input splash-input" value="1">
+<div class="counter-elem__arrow counter-elem__minus">-</div>
             </div>
             <div class="col-xl-2">
                 <div class="price">
@@ -266,7 +295,6 @@
   </div>
   <!-- Copyright -->
 
-
 <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
     <!-- Bootstrap tooltips -->
     <script type="text/javascript" src="js/popper.min.js"></script>
@@ -274,6 +302,7 @@
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <!-- MDB core JavaScript -->
     <script type="text/javascript" src="js/mdb.min.js"></script>
+    <script type="text/javascript" src="basket.js"></script>
 </footer>
 </body>
 </html>
