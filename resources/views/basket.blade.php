@@ -42,28 +42,7 @@
         </div>
     </div>
 
-    <div class="row">
-        <div class="col-xl-6">
-            <div class="Textt">
-                Товары
-            </div>
-        </div>
-        <div class="col-xl-2">
-            <div class="Textt">
-                Цена за шт.
-            </div>
-        </div>
-        <div class="col-xl-2">
-            <div class="Textt">
-                Количество
-            </div>
-        </div>
-        <div class="col-xl-2">
-            <div class="Textt">
-                Стоимость
-            </div>
-        </div>
-    </div>
+
 
    {{-- $request->session()->push('basket.values', $request->id);--}}
     {{-- $items, $currentItem --}}
@@ -72,19 +51,19 @@
     {{--@foreach($items as $item)--}}
 
 
-    @foreach (session()->get('basket.values') as $item)
+    @foreach ($itemsCollection as $item)
 
     <div class="row">
         <div class="col-xl-6">
             <div class="Description">
-                {{ $item }}
+                {{ $item->name }}
             <div class="Product">
-                <img src="{{asset('img/'.$item)}}" width="123px">
+                <img src="{{ asset('img/'.$item->image) }}" width="123px">
             </div>
         </div>
         <div class="col-xl-2">
             <div class="price">
-                {{$item}} ₽
+                {{$item->price}} ₽
             </div>
         </div>
         <div class="col-xl-2">
@@ -94,30 +73,12 @@
         </div>
         <div class="col-xl-2">
             <div class="price">
-                {{$item }} ₽
+                {{$item->price*2}} ₽
             </div>
         </div>
     </div>
     <hr>
     @endforeach
-
-    <div class="row">
-        <div class="col-xl-8">
-
-        </div>
-        <div class="col-xl-2">
-            <div class="all1">
-                ИТОГО:
-            </div>
-
-        </div>
-        <div class="col-xl-2">
-            <div class="all2">
-                7049 ₽
-            </div>
-        </div>
-
-    </div>
 
 
     <div class="row">

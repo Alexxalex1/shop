@@ -20,5 +20,5 @@ Route::get('lol', function () {
 
 Route::get('clean', function (){
 
-  (session()->forget('basket.values'));
+  session()->forget('basket.value');
 });

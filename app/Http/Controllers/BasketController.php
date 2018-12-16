@@ -13,11 +13,18 @@ class BasketController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+
     public function index()
     {
+        $itemsCollection =[];
+        foreach (session ()->get('basket.value') as $item)
+            array_push($itemsCollection, Item::find($item));
 
-       $items = Item::orderBy('id', 'desc')->get();
-       return view('basket', compact('items'));
+        return view('basket', compact('itemsCollection'));
+
+
+//       $items = Item::orderBy('id', 'desc')->get();
+//       return view('basket', compact('items'));
 
 
                 //return response()->json(Item::select(['name', 'about', 'price', 'image'])->get());
@@ -43,24 +50,16 @@ class BasketController extends Controller
     {
     //if (! in_array($request->id, $request->session()->get('basket.values')))
 //    $items = [];
-        $request->session()->push('basket.values', $request->id);
-
-        $itemsCollection = [];
-        foreach (session()->get('basket.values') as $item)
-            array_push($itemsCollection, Item::find($item));
-
-
-        return redirect()->back();
-
+        $request->session()->push('basket.value', $request->id);
 
         /*   foreach ($request->session()->get('basket.values') as $item) {
-        $currentItem = Item::find($item);
+            $currentItem = Item::find($item);
 
-        array_push($items, $currentItem);}*/
+             array_push($items, $currentItem);}*/
 
         //$request->session()->push('basket.values', $request->id);
         //$request->session()->forget('basket.values'); забыть ссесию
-        //return redirect()->back();
+        return redirect()->back();
     }
 
     /**
