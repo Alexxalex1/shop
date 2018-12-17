@@ -16,7 +16,7 @@
                         <a href="/sweets" class="nav-link waves-effect"><strong>Сладости</strong> </a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link waves-effect">
+                        <a href="/decoration" class="nav-link waves-effect">
                             <strong>Украшения</strong></a>
                     </li>
                     <li class="nav-item">
