@@ -25,6 +25,7 @@ Route::get('lol', function () {
 Route::get('clean', function (){
 
   session()->forget('basket.value');
+    return redirect('/');
 });
 
 
