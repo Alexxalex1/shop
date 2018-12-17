@@ -18,7 +18,7 @@
                     <a href="#!" style="color:#000; font-size: 20px;">Доставка</a>
                 </p>
                 <p>
-                    <a href="#!" style="color:#000; font-size: 20px;">Контакты</a>
+                    <a href="/about" style="color:#000; font-size: 20px;">Контакты</a>
                 </p>
 
             </div>

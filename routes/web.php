@@ -12,7 +12,7 @@ Route::get('/decoration', 'DecorationController@index');
 Route::get('/feedback', 'FeedbackController@index');
 Route::get('/feedback/input', 'InputFeedbackController@index');
 Route::get('/basketnext', 'NextBasketController@index');
-
+Route::get('/adout', 'NextBasketController@index');
 
 Route::get('test', function () {
     dd(session()->get('itemsCollection'));
