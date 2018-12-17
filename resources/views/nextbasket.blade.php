@@ -120,7 +120,7 @@ color: #000000;
             </div>
         </div>
         <div class="col-xl-6">
-            <img src="img/Screenshot_1.png" alt="maps" width="300px" height="250px" style="margin-top:25px; margin-left: 10 0px;">
+            <img src="{{asset('img/Screenshot_1.png')}}" alt="maps" width="300px" height="250px" style="margin-top:25px; margin-left: 10 0px;">
         </div>
     </div>
 

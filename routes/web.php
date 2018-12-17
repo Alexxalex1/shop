@@ -11,7 +11,7 @@ Route::get('/sweets', 'SweetsController@index');
 Route::get('/decoration', 'DecorationController@index');
 Route::get('/feedback', 'FeedbackController@index');
 Route::get('/feedback/input', 'InputFeedbackController@index');
-Route::get('/basket/next', 'NextBasketController@index');
+Route::get('/basketnext', 'NextBasketController@index');
 
 
 Route::get('test', function () {
