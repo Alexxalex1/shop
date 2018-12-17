@@ -3,10 +3,10 @@
 .NameCurrentPage{
     width: 300px;
     height: 60px;
-    background: #8659;
     margin-top: 130px;
     font-size: 25px;
     font-family: Roboto;
+    font-weight: bold;
     font-style: normal;
     display: flex;
     justify-content: center;
