@@ -8,7 +8,7 @@ Route::get('/basket', 'BasketController@index');
 Route::get('/basket/add', 'BasketController@store')->name('basket.add');
 Route::get('/about', 'AboutController@index');
 Route::get('/sweets', 'SweetsController@index');
-Route::get('/decoration', 'DecorationController@index');
+Route::get('/decoration', 'SweetsController@index');
 Route::get('/feedback', 'FeedbackController@index');
 Route::get('/feedback/input', 'InputFeedbackController@index');
 Route::get('/basketnext', 'NextBasketController@index');
