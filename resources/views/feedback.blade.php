@@ -36,7 +36,7 @@
         <div class="col-2 col-sm-3 col-md-4 col-lg-5 col-xl-4"></div>
         <div class="col-8 col-sm-6 col-md-4 col-lg-2
 		col-xl-4">
-            <a href="InputFeedback.html">
+            <a href="feedback/input">
                 <button class="ButtonFeedback2">
                     Написать отзыв
                 </button>

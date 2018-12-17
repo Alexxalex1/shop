@@ -72,6 +72,7 @@
             </div>
         </div>
     </div>
+
     @foreach ($itemsCollection as $item)
 
         <div class="row">
@@ -106,6 +107,7 @@
 
         </div>
         <hr>
+
     @endforeach
 
 
@@ -120,6 +122,18 @@
 
         </div>
     </div>
+
+    <div class="col-xl-4"></div>
+    <div class="col-xl-4">
+        <button class="button2" >
+            <div class="contine">
+                Очистить корзину
+            </div>
+        </button>
+
+
+    </div>
+</div>
 
 
 </div>

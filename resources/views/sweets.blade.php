@@ -30,7 +30,7 @@
             <!-- Products-->
             <div class="products">
                 <div class="row">
-                    @foreach ($items as $item)
+                     @foreach ($items as $item)
                         <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3"><div class="product-img">
                                 <img src="{{ asset('img/'.$item->image) }}" width="100%" height="100%">
                             </div>
@@ -46,6 +46,7 @@
                             </div>
                         </div>
                     @endforeach
+
                 </div>
             </div>
         </div>

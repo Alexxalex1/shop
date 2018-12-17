@@ -92,10 +92,17 @@ font-size: 20px;
     align-items: center;
     color: #fff;
 }
-button{
+.button1{
+    margin-top: 40px;
+    background: #32CD32;
+    border: 3px solid #32CD32;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+.button2{
     margin-top: 40px;
     background: #FF5151;
-border: 3px solid #FF5656;
-box-sizing: border-box;
-border-radius: 10px;
+    border: 3px solid #FF5656;
+    box-sizing: border-box;
+    border-radius: 10px;
 }
