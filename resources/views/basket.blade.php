@@ -114,29 +114,28 @@
     <div class="row">
         <div class="col-xl-4">
 
-            <button class="button">
+            <button class="button1">
                 <div class="contine">
                     Продолжить
                 </div>
             </button>
 
         </div>
+        <div class="col-xl-4"></div>
+        <div class="col-xl-4">
+            <button class="button2" >
+                <div class="contine"><a href="/clean">Очистить корзину</a>
+
+                </div>
+            </button>
+
+
+        </div>
     </div>
 
-    <div class="col-xl-4"></div>
-    <div class="col-xl-4">
-        <button class="button2" >
-            <div class="contine"><a href="/clean">Очистить корзину</a>
-
-            </div>
-        </button>
-
-
-    </div>
-</div>
-
 
 </div>
+
 
 @include('layouts.footer')
     </div>
