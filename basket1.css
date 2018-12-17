@@ -16,11 +16,14 @@ footer{
     width: 282px;
     height: 49px;
     border-radius: 25px;
-    border: 2px solid #853490;
+    border: 2px solid #FF5151;
+    background: linear-gradient(45deg, #FF5151, #FCFF51);;
     display: flex;
+    font-weight: bold;
     justify-content: center;
     align-items: center;
     font-size: 20px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);  
 }
 .Buttonn2, .Buttonn3{
     background: #D7D6D6;

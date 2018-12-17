@@ -9,28 +9,18 @@ footer{
     font-size: 40px;
 
 }
-.Buttonn1{
+.Buttonn1, .Buttonn2, .Buttonn3{
     margin-left: 30px;
     margin-top: 37px;
     width: 282px;
     height: 49px;
     border-radius: 25px;
-    border: 2px solid #853490;
+    border: 2px solid #FF5151;
+    background: linear-gradient(45deg, #FF5151, #FCFF51);;
     display: flex;
+    font-weight: bold;
     justify-content: center;
     align-items: center;
     font-size: 20px;
-}
-.Buttonn2, .Buttonn3{
-    background: #D7D6D6;
-    color: #F2F2F2;
-    margin-left: 30px;
-    margin-top: 37px;
-    width: 282px;
-    height: 49px;
-    border-radius: 25px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 20px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);    
 }
